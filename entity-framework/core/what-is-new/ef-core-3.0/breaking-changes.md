@@ -1628,7 +1628,7 @@ This package is only intended to be used at design time. Deployed applications s
 
 **Mitigations**
 
-If you need to reference this package to override EF Core's design-time behavior, you can update update PackageReference item metadata in your project. If the package is being referenced transitively via Microsoft.EntityFrameworkCore.Tools, you will need to add an explicit PackageReference to the package to change its metadata.
+If you need to reference this package to override EF Core's design-time behavior, you can update update PackageReference item metadata in your project.
 
 ``` xml
 <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
@@ -1637,6 +1637,8 @@ If you need to reference this package to override EF Core's design-time behavior
   <!--<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>-->
 </PackageReference>
 ```
+
+If the package is being referenced transitively via Microsoft.EntityFrameworkCore.Tools, you will need to add an explicit PackageReference to the package to change its metadata. Such an explicit reference must be added to any project where the types from the package are needed.
 
 <a name="SQLitePCL"></a>
 
