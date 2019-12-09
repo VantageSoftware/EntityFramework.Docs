@@ -22,11 +22,11 @@ C# 8 introduced a new feature called [nullable reference types](/dotnet/csharp/t
 
 The following example shows an entity type with required and optional properties, with the nullable reference feature disabled (the default) and enabled:
 
-# [Without nullable reference types (default)](#tab/without-nrt)
+### [Without nullable reference types (default)](#tab/without-nrt)
 
 [!code-csharp[Main](../../../samples/core/Miscellaneous/NullableReferenceTypes/CustomerWithoutNullableReferenceTypes.cs?name=Customer&highlight=4-8)]
 
-# [With nullable reference types](#tab/with-nrt)
+### [With nullable reference types](#tab/with-nrt)
 
 [!code-csharp[Main](../../../samples/core/Miscellaneous/NullableReferenceTypes/Customer.cs?name=Customer&highlight=4-6)]
 
@@ -43,11 +43,11 @@ For more information on nullable reference types and how to use them with EF Cor
 
 A property that would be optional by convention can be configured to be required as follows:
 
-# [Data Annotations](#tab/data-annotations)
+### [Data Annotations](#tab/data-annotations)
 
 [!code-csharp[Main](../../../samples/core/Modeling/DataAnnotations/Required.cs?highlight=14)]
 
-# [Fluent API](#tab/fluent-api)
+### [Fluent API](#tab/fluent-api)
 
 [!code-csharp[Main](../../../samples/core/Modeling/FluentAPI/Required.cs?highlight=11-13)]
 
