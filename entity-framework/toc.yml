@@ -140,8 +140,6 @@
           href: core/modeling/relational/fk-constraints.md
         - name: Alternate Keys (Unique Constraints)
           href: core/modeling/relational/unique-constraints.md
-        - name: Inheritance (Relational Database)
-          href: core/modeling/relational/inheritance.md
     - name: Managing Database Schemas
       items:
       - name: Overview
